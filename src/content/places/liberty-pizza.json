@@ -1,0 +1,13 @@
+{
+  "name": "Libert Pizza",
+  "scores": {
+    "food": 4.1,
+    "service": 5,
+    "aesthetics": 4
+  },
+  "location": {
+    "country": "USA"
+  },
+  "thoughts": "the buffalo chicken is just great",
+  "initial_visit_date": "September 10 2024"
+}

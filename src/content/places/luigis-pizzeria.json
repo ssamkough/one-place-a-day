@@ -1,0 +1,13 @@
+{
+  "name": "Luigi's Pizzeria",
+  "scores": {
+    "food": 4,
+    "service": 5,
+    "aesthetics": 4
+  },
+  "location": {
+    "country": "USA"
+  },
+  "thoughts": "nice variety of pizzas",
+  "initial_visit_date": "September 17 2024"
+}

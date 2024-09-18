@@ -11,7 +11,7 @@ const placesCollection = defineCollection({
         food: z.number(),
         service: z.number(),
         aesthetics: z.number(),
-        bathroom: z.number(),
+        bathroom: z.number().optional(),
       })
       .optional(),
     location: z.object({
