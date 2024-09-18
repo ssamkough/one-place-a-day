@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import PlaceLayout from "../../layouts/PlaceLayout.astro";
+
+export async function getStaticPaths() {
+  const placeEntries = await getCollection("places");
+  return placeEntries.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+---
+
+<PlaceLayout frontmatter={entry.data} />

@@ -1,0 +1,14 @@
+{
+  "name": "Aristo Gourmet Deli",
+  "scores": {
+    "food": 5,
+    "service": 5,
+    "aesthetics": 5,
+    "bathroom": 5
+  },
+  "location": {
+    "country": "USA"
+  },
+  "thoughts": "i love deli sandwiches",
+  "initial_visit_date": "September 9 2024"
+}

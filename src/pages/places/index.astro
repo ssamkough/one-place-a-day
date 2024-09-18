@@ -1,0 +1,21 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+const places = await getCollection("places");
+console.log('places',places)
+---
+
+<Layout title="Places">
+  <div class="container">
+    {places.map(({id, data: {name}}) => (
+        <a href={`/places/${id}`}>{name}</a>
+    ))}
+  </div>
+</PageLayout>
+
+<style>
+  .container {
+    display: grid;
+  }
+</style>

@@ -1,24 +1,25 @@
 ---
-const TITLE= 'One Place A Day'
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{TITLE}</title>
-	</head>
-	<body>
-		<h1>{TITLE}</h1>
-		<p><em>One Place A Day</em> is a website where i (<a href="https://sammy.pizza">sammy samkough</a>) share my thoughts on places i goes to.</p>
-		<p>the purpose of this website is two-fold:</p>
-		<ol>
-			<li>i have opinions on places i go to and would like to share them</li>
-			<li>i want to show people the power of expressing one's self through one's own personal website (as opposed to expressing one's self via a <var>platform<sup>*</sup></var>)</li>
-		</ol>
-		<hr />
-		<p><sup>*</sup> i.e. Instagram, YouTube, X / Twitter</p>
-	</body>
-</html>
+<Layout>
+	<div class="container">
+	<br/>
+	<h2>this is heading 2</h2>
+	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
+	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
+	<h4>this is heading 4</h4>
+	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
+	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
+	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
+	</div>
+</Layout>
+
+<style>
+	.container {
+		max-width: 600px;
+	}
+	p {
+		margin-bottom: 1em;
+	}
+</style>
