@@ -3,23 +3,70 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<div class="container">
-	<br/>
-	<h2>this is heading 2</h2>
-	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
-	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
-	<h4>this is heading 4</h4>
-	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
-	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
-	<p>this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough. this is dummy text used because i am trying out a font at one place a day [dot] come. my name is sammy samkough.</p>
-	</div>
+  <div class="container">
+    <br />
+    <h2>Coming soon!</h2>
+    <br />
+    <div class="emoji-container">
+      <img src="sandwich_1.png" alt="sandwich emoji" width="200" height="200" />
+      <img src="peach_2.png" alt="peach emoji" width="200" height="200" />
+    </div>
+    <!-- <br />
+    <h2>this is heading 2</h2>
+    <p>
+      this is dummy text used because i am trying out a font at one place a day
+      [dot] come. my name is sammy samkough. this is dummy text used because i
+      am trying out a font at one place a day [dot] come. my name is sammy
+      samkough. this is dummy text used because i am trying out a font at one
+      place a day [dot] come. my name is sammy samkough.
+    </p>
+    <p>
+      this is dummy text used because i am trying out a font at one place a day
+      [dot] come. my name is sammy samkough. this is dummy text used because i
+      am trying out a font at one place a day [dot] come. my name is sammy
+      samkough. this is dummy text used because i am trying out a font at one
+      place a day [dot] come. my name is sammy samkough.
+    </p>
+    <h4>this is heading 4</h4>
+    <p>
+      this is dummy text used because i am trying out a font at one place a day
+      [dot] come. my name is sammy samkough. this is dummy text used because i
+      am trying out a font at one place a day [dot] come. my name is sammy
+      samkough. this is dummy text used because i am trying out a font at one
+      place a day [dot] come. my name is sammy samkough.
+    </p>
+    <p>
+      this is dummy text used because i am trying out a font at one place a day
+      [dot] come. my name is sammy samkough. this is dummy text used because i
+      am trying out a font at one place a day [dot] come. my name is sammy
+      samkough. this is dummy text used because i am trying out a font at one
+      place a day [dot] come. my name is sammy samkough.
+    </p>
+    <p>
+      this is dummy text used because i am trying out a font at one place a day
+      [dot] come. my name is sammy samkough. this is dummy text used because i
+      am trying out a font at one place a day [dot] come. my name is sammy
+      samkough. this is dummy text used because i am trying out a font at one
+      place a day [dot] come. my name is sammy samkough.
+    </p> -->
+  </div>
 </Layout>
 
 <style>
-	.container {
-		max-width: 600px;
-	}
-	p {
-		margin-bottom: 1em;
-	}
+  .container {
+    max-width: 800px;
+  }
+  .emoji-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  h2 {
+    font-size: 3em;
+    color: var(--colors-tertiary);
+  }
+  p {
+    margin-bottom: 1em;
+  }
 </style>
