@@ -1,20 +1,19 @@
 ---
 import { TITLE } from "../utils";
-import Links from "./Links.astro";
-
+import Navigation from "./Navigation.astro";
 ---
 
 <footer>
-    <span>{TITLE}</span>
-    <Links/>
+  <span>{TITLE}</span>
+  <Navigation />
 </footer>
 
 <style>
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 </style>

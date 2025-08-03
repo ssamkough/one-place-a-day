@@ -1,5 +1,9 @@
 {
   "name": "Aristo Gourmet Deli",
+  "visit_date": "September 9 2024",
+  "snippet": "i love deli sandwiches. i love deli sandwiches. i love deli sandwiches. i love deli sandwiches. i love deli sandwiches.",
+  "thoughts": "i love deli sandwiches",
+  "thumbnail_url": "/peach_2.png",
   "scores": {
     "food": 5,
     "service": 5,
@@ -8,7 +12,5 @@
   },
   "location": {
     "country": "USA"
-  },
-  "thoughts": "i love deli sandwiches",
-  "initial_visit_date": "September 9 2024"
+  }
 }

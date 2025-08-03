@@ -4,23 +4,22 @@ const placesCollection = defineCollection({
   type: "data",
   schema: z.object({
     name: z.string(),
-    website_url: z.string().optional(),
-    has_wifi: z.boolean().optional(),
-    scores: z
-      .object({
-        food: z.number(),
-        service: z.number(),
-        aesthetics: z.number(),
-        bathroom: z.number().optional(),
-      })
-      .optional(),
+    visit_date: z.string(),
+    snippet: z.string(),
+    thoughts: z.string(),
+    thumbnail_url: z.string(),
+    scores: z.object({
+      food: z.number(),
+      service: z.number(),
+      aesthetics: z.number(),
+      bathroom: z.number().optional(),
+    }),
     location: z.object({
       country: z.string(),
     }),
-    thoughts: z.string(),
-    initial_visit_date: z.string(),
-    // created_date: z.date().transform((str) => new Date(str)),
-    // updated_date: z.date().transform((str) => new Date(str)),
+    website_url: z.string().optional(),
+    has_wifi: z.boolean().optional(),
+    more_images: z.array(z.string()).optional(),
   }),
 });
 export const collections = {

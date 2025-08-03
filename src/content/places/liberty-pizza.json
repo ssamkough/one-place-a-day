@@ -1,13 +1,16 @@
 {
-  "name": "Libert Pizza",
+  "name": "Liberty Pizza",
+  "visit_date": "September 25 2024",
+  "snippet": "good pizza is good. lorem ipsum. good pizza is good. lorem ipsum. good pizza is good. lorem ipsum. good pizza is good. lorem ipsum. good pizza is good. lorem ipsum. good pizza is good. lorem ipsum. good pizza is good. lorem ipsum.",
+  "thoughts": "i love deli sandwiches",
+  "thumbnail_url": "/peach_2.png",
   "scores": {
-    "food": 4.1,
+    "food": 5,
     "service": 5,
-    "aesthetics": 4
+    "aesthetics": 5,
+    "bathroom": 5
   },
   "location": {
     "country": "USA"
-  },
-  "thoughts": "the buffalo chicken is just great",
-  "initial_visit_date": "September 10 2024"
+  }
 }

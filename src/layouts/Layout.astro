@@ -1,14 +1,14 @@
 ---
+import Footer from "../components/Footer.astro";
 import "../styles/1-globals.css";
 import "../styles/2-variables.css";
 import "../styles/3-defaults.css";
 import { TITLE } from "../utils";
 
 const { title } = Astro.props;
-const headingTitle = title ?? TITLE;
 const pageTitle = `${title ? `${title} | ` : ""}${TITLE}`;
 const DESCRIPTION =
-  "One Place A Day is a website where sammy samkough shares his thoughts on places he goes to";
+  "One Place A Day is a website where Sammy shares his thoughts on places he goes to.";
 ---
 
 <html lang="en">
@@ -27,19 +27,24 @@ const DESCRIPTION =
     <meta property="og:site_name" content={TITLE} />
   </head>
   <body>
-    <!-- <Header /> -->
     <main>
-      <h1>{headingTitle}</h1>
+      <h1>{title}</h1>
       <slot />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </body>
 </html>
 
 <style>
+  body {
+    min-height: 100dvh;
+  }
   main {
+    flex: 1;
   }
   h1 {
-    font-size: 4em;
+    font-family: "RhythmTwo-Solid";
+    font-weight: 500;
+    font-size: 2.2em;
   }
 </style>

@@ -3,19 +3,25 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 const places = await getCollection("places");
-console.log('places',places)
 ---
 
 <Layout title="Places">
-  <div class="container">
-    {places.map(({id, data: {name}}) => (
-        <a href={`/places/${id}`}>{name}</a>
-    ))}
-  </div>
-</PageLayout>
+  <ul>
+    {
+      places.map(({ id, data: { name } }) => (
+        <li>
+          <a href={`/places/${id}`}>{name}</a>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
 
 <style>
-  .container {
-    display: grid;
+  ul {
+    margin-left: 2em;
+  }
+  li {
+    margin-top: 0.4em;
   }
 </style>
