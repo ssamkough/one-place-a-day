@@ -1,10 +1,69 @@
 ---
 import Layout from "./Layout.astro";
-const {title} = Astro.props;
-const { frontmatter: {name} } = Astro.props;
+const { title } = Astro.props;
+const {
+  frontmatter: {
+    name,
+    thumbnail_url,
+    visit_date,
+    location,
+    snippet,
+    thoughts,
+    scores,
+  },
+} = Astro.props;
 ---
 
 <Layout title={title}>
-    <h2>{name}</h2>
-    <slot />
+  <div class="container">
+    <img
+      src={thumbnail_url}
+      alt={`Thumbnail of ${name}`}
+      width="120"
+      height="120"
+    />
+    <div>
+      <!-- TODO: properly implement view transitions -->
+      <h2 transition:name="hero">{name}</h2>
+      <p>
+        <time style="font-style: italic;">{visit_date}</time>
+        <span>{location.country}</span>
+      </p>
+      <p style="font-style: italic;">{snippet}</p>
+    </div>
+  </div>
+  <hr />
+  <p>{thoughts}</p>
+  <table>
+    <thead>
+      <tr>
+        <td>food</td>
+        <td>service</td>
+        <td>aesthetics</td>
+        <td>bathroom</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{scores.food}</td>
+        <td>{scores.service}</td>
+        <td>{scores.aesthetics}</td>
+        <td>{scores.bathroom}</td>
+      </tr>
+    </tbody>
+  </table>
 </Layout>
+
+<style>
+  .container {
+    display: flex;
+    gap: 1.4em;
+  }
+  hr {
+    margin-block: 1em;
+    border-color: var(--colors-tertiary);
+  }
+  table {
+    width: 100%;
+  }
+</style>

@@ -23,7 +23,10 @@ const places = await getCollection("places");
             height="100"
           />
           <div class="text">
-            <h3>{name}</h3>
+            {/* TODO: properly implement view transitions */}
+            <h3 transition:name="hero" transition:animate="slide">
+              {name}
+            </h3>
             <p>{snippet}</p>
           </div>
         </a>
