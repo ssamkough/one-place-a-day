@@ -29,7 +29,7 @@ const {
         <time style="font-style: italic;">{visit_date}</time>
         <span>{location.country}</span>
       </p>
-      <p style="font-style: italic;">{snippet}</p>
+      <p class="snippet" style="font-style: italic;">{snippet}</p>
     </div>
   </div>
   <hr />
@@ -58,6 +58,13 @@ const {
   .container {
     display: flex;
     gap: 1.4em;
+  }
+  .snippet {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
   }
   hr {
     margin-block: 1em;
